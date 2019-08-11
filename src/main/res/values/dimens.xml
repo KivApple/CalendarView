@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="TextGridView_defaultTextSize">14sp</dimen>
+	<dimen name="TextGridView_defaultCellSize">36dp</dimen>
+	<dimen name="TextGridView_defaultCellMargin">8dp</dimen>
+	<dimen name="TextGridView_defaultBorderWidth">1dp</dimen>
+	<dimen name="TextGridView_defaultHeaderHeight">24dp</dimen>
+</resources>
