@@ -10,6 +10,7 @@ import android.util.AttributeSet
 import android.view.MotionEvent
 import android.view.View
 import kotlin.math.max
+import kotlin.math.min
 
 open class TextGridView(context: Context, attrs: AttributeSet?, defStyleAttr: Int): View(context, attrs, defStyleAttr) {
 	private val shapePaint = Paint(Paint.ANTI_ALIAS_FLAG)
@@ -105,7 +106,7 @@ open class TextGridView(context: Context, attrs: AttributeSet?, defStyleAttr: In
 			MeasureSpec.AT_MOST -> if (targetHeight > originalHeight) 1.0f else targetHeight.toFloat() / originalHeight
 			else -> throw IllegalArgumentException()
 		}
-		scale = max(scaleX, scaleY)
+		scale = min(scaleX, scaleY)
 		val width = if (widthMode == MeasureSpec.EXACTLY)
 			targetWidth.toFloat()
 		else
